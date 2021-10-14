@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 15:44:44 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 18:33:08 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/14 18:41:20 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,19 +45,12 @@ int	main(int argc, const char **argv)
 	if (argc == 2)
 	{
 		if (push_swap(NULL, argv[argc - 1]) == -1)
-		{
-			system("leaks push_swap");
 			exit(EXIT_FAILURE);
-		}
 	}
 	if (argc > 2)
 	{
 		if (push_swap(argv + 1, NULL) == -1)
-		{
-			system("leaks push_swap");
 			exit(EXIT_FAILURE);
-		}
 	}
-	system("leaks push_swap");
 	exit(EXIT_SUCCESS);
 }
