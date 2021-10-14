@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:39:02 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 18:14:13 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/14 19:29:40 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ typedef struct s_stack
 	size_t	chunk_pos;
 	size_t	size_a;
 	int		bounds[2];
+	int		nbr_of_rot;
 }				t_stack;
 
 /*

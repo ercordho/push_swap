@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 15:35:08 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 18:14:10 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/14 19:29:32 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void	rotate_b_push_a(t_stack *stack)
 	int	i;
 	int	min_val;
 
+	stack->nbr_of_rot = 0;
 	i = 0;
 	min_val = closest_finder(stack);
 	if (min_val >= (int)stack->chunk_pos / 2)
@@ -88,6 +89,9 @@ void	rotate_b_push_a(t_stack *stack)
 	if (stack->chunk_pos > 0)
 	{
 		if (stack->a[stack->chunk_pos] < stack->a[stack->chunk_pos - 1])
+		{
 			rotate_a(stack);
+			stack->nbr_of_rot++;
+		}
 	}
 }

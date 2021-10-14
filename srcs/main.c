@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 15:44:44 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 18:41:20 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/14 19:32:44 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int	push_swap(const char **args, const char *arg)
 	}
 	if (array_is_sort(stack.a, stack.size_a) == -1)
 		sort(&stack);
-	array_display(stack.a, stack.size_a);
 	free((void *)stack.a);
 	free((void *)stack.solved);
 	return (1);

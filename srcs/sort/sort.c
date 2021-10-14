@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 16:29:24 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 18:24:42 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/14 19:29:53 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ static void	sort_chunck(t_stack *stack, size_t median)
 		while (stack->chunk_pos > 0)
 		{
 			rotate_b_push_a(stack);
-			rot++;
+			rot += stack->nbr_of_rot;
 		}
 	}
 	while (stack->a[stack->size_a - 1] < stack->a[0])
