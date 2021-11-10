@@ -6,7 +6,7 @@
 #    By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/05 15:19:07 by ercordho          #+#    #+#              #
-#    Updated: 2021/10/14 18:35:00 by ercordho         ###   ########.fr        #
+#    Updated: 2021/11/10 16:17:18 by ercordho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,11 @@ NAME			=	push_swap
 CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
 RM				=	rm -f
+
+OS := $(shell uname -s)
+ifeq ($(OS),Darwin)
+ 	CFLAGS		+=	-fsanitize=address
+endif
 
 SRCS			=	srcs/array/array_display.c \
 					srcs/array/array_duplicates.c \

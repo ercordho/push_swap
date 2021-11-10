@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 16:36:12 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 18:07:52 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/14 19:45:05 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,9 @@ void	reverse_rotate_b(t_stack *stack)
 	if (stack->chunk_pos < 2)
 		return ;
 	tmp = stack->a[0];
-	i = 0;
-	while (i < (int)stack->chunk_pos - 1)
-	{
+	i = -1;
+	while (++i < (int)stack->chunk_pos - 1)
 		ft_swap(&stack->a[i], &stack->a[i + 1]);
-		i++;
-	}
 	stack->a[i] = tmp;
 	ft_putendl("rrb");
 }

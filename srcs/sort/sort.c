@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 16:29:24 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 19:29:53 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/10 16:05:55 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,12 @@ static void	sort_3(t_stack *stack)
 static void	sort_5(t_stack *stack)
 {
 	int	i;
-	int	norm_pos;
+	int	normi_pos;
 
 	while (stack->size_a - stack->chunk_pos > 3)
 		push_b(stack);
-	norm_pos = stack->chunk_pos;
-	array_get_bounds(stack->a + norm_pos, stack->size_a - norm_pos, stack);
+	normi_pos = stack->chunk_pos;
+	array_get_bounds(stack->a + normi_pos, stack->size_a - normi_pos, stack);
 	if ((stack->bounds[0] + 1) % 3 == stack->bounds[1])
 		swap_a(stack);
 	if (stack->size_a == 5)

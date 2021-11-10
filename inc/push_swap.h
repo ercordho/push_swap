@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:39:02 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 19:29:40 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/10 16:53:22 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,11 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <sys/types.h>
-# include <sys/stat.h>
-# include <fcntl.h>
 
 # define BUFFER_SIZE 1
 
 # define PRINT_NRM	"\x1B[0m"
 # define PRINT_RED	"\x1B[31m"
-# define PRINT_GRN	"\x1B[32m"
-# define PRINT_YEL	"\x1B[33m"
-# define PRINT_BLU 	"\x1B[34m"
-# define PRINT_MAG	"\x1B[35m"
-# define PRINT_CYN	"\x1B[36m"
-# define PRINT_WHT	"\x1B[37m"
 
 typedef struct s_stack
 {

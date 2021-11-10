@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 15:35:08 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/14 19:29:32 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/10 16:35:24 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,16 @@ static int	can_push_b(t_stack *stack, int loop, int median)
 	int	ret;
 
 	pos = (loop + 1) * median;
-	chunck_value = stack->a[stack->chunk_pos];
-	solved_value = stack->solved[stack->size_a - (loop + 1) * median];
+	if (stack->chunk_pos < stack->size_a)
+		chunck_value = stack->a[stack->chunk_pos];
+	if (stack->size_a - (loop + 1) * median < stack->size_a)
+		solved_value = stack->solved[stack->size_a - (loop + 1) * median];
 	ret = 0;
 	if (pos >= (int)stack->size_a || chunck_value >= solved_value)
 		ret++;
-	solved_value = stack->solved[stack->size_a - loop * median];
-	if ((loop == 0 || chunck_value < solved_value))
+	if (stack->size_a - loop * median < stack->size_a)
+		solved_value = stack->solved[stack->size_a - loop * median];
+	if (loop == 0 || chunck_value < solved_value)
 		ret++;
 	if (ret == 2)
 		return (1);
