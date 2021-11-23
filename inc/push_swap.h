@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:39:02 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/10 16:53:22 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/17 16:15:44 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ typedef struct s_stack
 /*
 **	ARRAY
 */
-void	array_display(int *a, size_t size_a);
 int		array_duplicates(int *a, size_t size_a);
 int		array_fill(t_stack *stack, const char **args);
 void	array_get_bounds(int *a, size_t size, t_stack *stack);
