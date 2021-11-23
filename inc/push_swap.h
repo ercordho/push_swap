@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:39:02 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/17 16:15:44 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/23 15:06:26 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,5 +114,10 @@ size_t	ft_putchar(char c);
 size_t	ft_putendl(const char *str);
 size_t	ft_putnbr(long nbr);
 size_t	ft_putstr(const char *str);
+
+/*
+**	PUSH_SWAP
+*/
+int		push_swap(const char **args, const char *arg);
 
 #endif

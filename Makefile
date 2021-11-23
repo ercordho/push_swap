@@ -6,7 +6,7 @@
 #    By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/05 15:19:07 by ercordho          #+#    #+#              #
-#    Updated: 2021/11/23 14:32:51 by ercordho         ###   ########.fr        #
+#    Updated: 2021/11/23 15:09:50 by ercordho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,7 +62,9 @@ SRCS			=	srcs/array/array_duplicates.c \
 					srcs/write/ft_putnbr.c \
 					srcs/write/ft_putstr.c \
 				\
-					srcs/main.c
+					srcs/push_swap.c \
+				\
+					main.c
 OBJS			=	$(SRCS:.c=.o)
 
 $(NAME) 		: 	$(OBJS)
