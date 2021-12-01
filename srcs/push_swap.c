@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 15:04:48 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/23 15:05:12 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/12/02 00:00:56 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int	push_swap(const char **args, const char *arg)
 		free((void *)stack.a);
 		return (-1);
 	}
-	if (stack.a == NULL)
+	if (stack.a == (void *)0)
 		return (-1);
 	stack.chunk_pos = 0;
 	stack.solved = array_solved(stack);
-	if (stack.solved == NULL)
+	if (stack.solved == (void *)0)
 	{
 		free((void *)stack.a);
 		return (-1);

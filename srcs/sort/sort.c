@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 16:29:24 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/10 16:05:55 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/30 19:01:22 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 static void	sort_2(t_stack *stack)
 {
-	stack->chunk_pos = 0;
 	if (stack->a[0] > stack->a[1])
 		swap_a(stack);
 }

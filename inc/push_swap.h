@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:39:02 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/23 15:06:26 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/30 19:01:32 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
-
-# define BUFFER_SIZE 1
 
 # define PRINT_NRM	"\x1B[0m"
 # define PRINT_RED	"\x1B[31m"

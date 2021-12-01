@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 22:59:17 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/12 00:47:39 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/12/02 00:00:56 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,16 @@ int	array_get_stack_a(const char **args, const char *arg, t_stack *stack)
 	char	**args_a;
 
 	args_a = NULL;
-	if (args && arg == NULL)
+	if (args && arg == (void *)0)
 		args_a = (char **)args;
-	else if (arg && args == NULL)
+	else if (arg && args == (void *)0)
 	{
 		args_a = ft_split(arg, " ");
-		if (args_a == NULL)
+		if (args_a == (void *)0)
 			return (-1);
 	}
 	stack->a = (int *)malloc(sizeof(int) * ft_strslen((const char **)args_a));
-	if (stack->a == NULL)
+	if (stack->a == (void *)0)
 		return (clear_memory(arg, args_a, -1));
 	stack->size_a = ft_strslen((const char **)args_a);
 	if (array_fill(stack, (const char **)args_a) == -1)

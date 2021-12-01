@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 02:48:13 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/10 16:24:18 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/12/02 00:00:56 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*array_solved(t_stack stack)
 	int	i;
 
 	solved = (int *)malloc(sizeof(int) * stack.size_a);
-	if (solved == NULL)
+	if (solved == (void *)0)
 		return (NULL);
 	i = -1;
 	while (++i < (int)stack.size_a)
