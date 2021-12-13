@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 15:39:02 by ercordho          #+#    #+#             */
-/*   Updated: 2021/11/30 19:01:32 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/12/13 16:00:54 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
+
+# ifndef __APPLE__
+#  define __APPLE__ 0
+# endif
 
 # define PRINT_NRM	"\x1B[0m"
 # define PRINT_RED	"\x1B[31m"
