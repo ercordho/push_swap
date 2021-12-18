@@ -6,7 +6,7 @@
 #    By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/05 15:19:07 by ercordho          #+#    #+#              #
-#    Updated: 2021/11/23 15:09:50 by ercordho         ###   ########.fr        #
+#    Updated: 2021/12/18 01:30:39 by ercordho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,4 +77,4 @@ clean			:
 fclean			:	clean
 					@$(RM) $(NAME)
 re				:	fclean all
-.PHONY			:	all clean fclean re push_swap
+.PHONY			:	all clean fclean re
